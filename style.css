@@ -11,4 +11,40 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f7f7fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
+  width: 940px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgb(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+}
+.card-header {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  min-height: 250px;
 }
